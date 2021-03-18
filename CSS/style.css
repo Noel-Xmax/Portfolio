@@ -1,0 +1,136 @@
+body{
+  background-color: #faf3e0;
+  margin: 0;
+  line-height: 1.6;
+}
+*,
+*::before,
+*::after{
+  box-sizing: border-box ;
+}
+:root{
+  --ff-primary:nunito sans;
+  --ff-secondary:blinker;
+  --ff-regular:300;
+  --ff-bold:900;
+
+  --fs-h1:3rem;
+  --fs-h2:2.25rem;
+  --fs-h3:1.25rem;
+  --fs-body:1rem;
+}
+
+@media (min-width: 800px){
+  :root{
+  --fs-h1:4.5rem;
+  --fs-h2:3.75rem;
+  --fs-h3:1.5rem;
+  --fs-body:1.25rem;
+  }
+}
+strong{font-weight: bolder;}
+img{
+  display: block;
+  max-width: 100%;
+  width: 600px;
+  height: 150px;
+}
+h1,h2,h3{
+  line-height: .25rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+.s1intro, .S1intopar{
+  padding-left: 1rem;
+  position: relative;
+}
+.S1intopar{
+  background-color: #eabf9f;
+  margin-bottom: 5em;
+  align-self: flex-start;
+  grid-column: 1/1;
+  /* grid-row: 2; */
+  /* text-align: right;
+  position: absolute;
+  right: -7em; */
+}
+section{
+  padding: 1em 4em;
+}
+.intro,.workExp, .mySkills,.myProjects,.contactme{
+  margin:0;
+  font-weight: var(--ff-regular);
+  margin-bottom:0;
+
+}
+.intro{
+position: relative;
+}
+@media (min-width:600px){
+  .intro{
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap:1em;
+    grid-template-areas:
+      "img title"
+      "img subttle" ;
+    grid-template-columns: min-content max-content;
+  }
+  .img1{
+    grid-area: img;
+    min-width: 250px;
+    min-height: 250px;
+  }
+}
+.aboutme{
+  background-color: #b68973;
+  color: white;
+  background-image: url(../Images/background.jpg);
+  background:cover;
+  background-blend-mode: multiply;
+  text-align: center;
+}
+.s2aboutme{
+color:#7eca9c;
+position: relative;
+}
+.s2aboutme::after{
+  content: '';
+  display: block;
+  width: 25%;
+  width: 3em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: hsl(49, 15%, 27%);
+  font-size: 50px;
+  margin-bottom: 2em;
+  opacity: 0.25;
+  text-align: center;
+}
+.aboutmeA{
+  display:flex;
+  margin: 0 auto;
+  vertical-align: middle;
+  color: whitesmoke;
+
+  }
+@media (min-width:800px){
+.aboutmeA{
+  display:flex;
+  max-width: 1000px;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+}
+}
+.certifications+.bachelors+.others{
+  margin-left:1em;
+}
+.certs,.degree,.certs2{
+  font-size: 25px;
+  color: #f39189;
+ }
+.cert,.cert2 li{
+  list-style: none;
+}
