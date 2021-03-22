@@ -32,7 +32,7 @@ strong{font-weight: bolder;}
 img{
   display: block;
   max-width: 100%;
-  width: 600px;
+  width: 500px;
   height: 150px;
 }
 h1,h2,h3{
@@ -49,7 +49,7 @@ h1,h2,h3{
   margin-bottom: 5em;
   align-self: flex-start;
   grid-column: 1/1;
-  /* grid-row: 2; */
+    /* grid-row: 2; */
   /* text-align: right;
   position: absolute;
   right: -7em; */
@@ -64,7 +64,10 @@ section{
 
 }
 .intro{
-position: relative;
+  position: relative;
+  margin-right: 80%;
+  margin-bottom: 2%;
+
 }
 @media (min-width:600px){
   .intro{
@@ -81,6 +84,7 @@ position: relative;
     grid-area: img;
     min-width: 250px;
     min-height: 250px;
+    margin-left: 0ch;
   }
 }
 .aboutme{
@@ -95,6 +99,7 @@ position: relative;
 .s2aboutme{
 color:#7eca9c;
 position: relative;
+padding-top: 2%;
 }
 .s2aboutme::after{
   content: '';
@@ -163,6 +168,7 @@ position: relative;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: transform 200ms ease-in-out;
+  margin-top: 1%;
 }
 .focus:hover{
   transform: scale(1.1);
@@ -187,6 +193,7 @@ position: relative;
   color:#f39189;
   font-weight: bolder;
   font-size: 40px;
+  padding-top: 2%;
 }
 .work{
   position: relative;
@@ -194,7 +201,7 @@ position: relative;
   /* background-color: #c8eed9; */
 }
 @media (min-width: 600px){
-  position: relative;
+  position:relative;
 }
 .section3work{
   font-size: 18px;
@@ -211,16 +218,19 @@ position: relative;
 .workExp{
   background-color: #cee6b4;
   margin-right: 0;
+  margin-top: 2%;
 }
 .mySkills{
   text-align: center;
   background-color: ivory;
   float: right;
+  margin-right: 50%;
 }
 .skills{
   text-align: center;
   text-decoration:underline ;
   margin-bottom: 2em;
+  margin-top: 1em;
   color:#f39189;
   font-weight: bolder;
   font-size: 40px;
@@ -231,9 +241,21 @@ position: relative;
   
 }
 .myProjects{
-  background-color: ivory;
+  background-color: rgb(241, 241, 197);
   text-align: center;
+  position: static;
   float: left;
+  /* margin-right: 20%; */
+  position :absolute;
+  margin-left: 50%;
+  text-align: center;
+  /* text-decoration:underline ; */
+  margin-bottom: 2em;
+  color:#f39189;
+  font-weight: bolder;
+  /* font-size: 40px; */
+  width: 520px;
+  height: 425px;
 }
 .prjct{
   text-align: center;
@@ -242,6 +264,8 @@ position: relative;
   color:#f39189;
   font-weight: bolder;
   font-size: 40px;
+  border-bottom: 50%;
+  padding: 12%;
 }
 .portfolio li{
   list-style: none;
@@ -249,9 +273,46 @@ position: relative;
 .contactme{
   display: relative;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 35%;
 }
 footer{
   text-align: center;
   color: #b68973;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  /* background-color: #3b6b07; */
+}
+.hamareas{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eabf9f;
+  flex-direction: column;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 12%;
+  text-align: center;
+  margin-left: 40%;
+ }
+.hamareas ul{
+  align-items: center;
+  text-align: none;
+  margin:0%;
+  display: flex;
+  padding: 0%;
+  text-decoration: none;
+}
+.hamlists li{
+  display: flex;
+  justify-content: space-between;
+  margin-right:5% ;
+  cursor: pointer;
+}
+.hamlistings{
+  text-decoration: none;
+}
+  
+.hamlistings{
+  background-color: #ffdf91;
+  text-decoration: none;
+  padding: 1%;
 }
