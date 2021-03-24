@@ -2,7 +2,7 @@ body{
   background-color: #faf3e0;
   margin: 0;
   line-height: 1.6;
-  background-image: url(../Images/pexels-johannes-plenio-1103970.jpg);
+  background-image: url(../Images/pexels-john-cahil-rom-2170473.jpg);
 }
 *,
 *::before,
@@ -35,6 +35,9 @@ strong{
   font-size: 20px;
   font-family:lobster;
 }
+.hamareas{
+  background-color: honeydew;
+}
 
 img{
   display: block;
@@ -50,6 +53,7 @@ h1,h2,h3{
 .s1intro, .S1intopar{
   padding-left: 1rem;
   position: relative;
+  color: antiquewhite;
 }
 .S1intopar{
   background-color:grey;
@@ -190,15 +194,17 @@ position: relative;
 .myWorkExp{
   text-align: center;
   text-decoration:underline ;
-  margin-bottom: 2em;
-  color:grey;
+  margin-bottom: 4%;
+  color:white;
   font-weight: bolder;
-  font-size: 60px;
+  font-family: font-family-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 80px;
   padding-top: 2%;
 }
 .work{
   position: relative;
   display: flex;
+  color: #dbf6e9;
 }
 @media (min-width: 600px){
   .work{
@@ -207,7 +213,8 @@ position: relative;
 }
 .section3work{
   font-size: 18px;
-  color: #26001b;
+  color: #7eca9c;
+  margin-bottom: 6%;
   font-family: font-family-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .work1 li, .work2 li, .work3 li, .work4 li{
@@ -217,10 +224,13 @@ position: relative;
   font-size: 12px;
 }
 .workExp{
-  background-color: #cee6b4;
+  /* background-color: #cee6b4; */
   margin-right: 0;
   margin-top: 2%;
   margin-bottom: 2%;
+  /* mix-blend-mode: multiply; */
+  border: gray;
+  color: black;
 }
 .mySkills{
   text-align: center;
@@ -231,7 +241,7 @@ position: relative;
 .skills{
   text-align: center;
   text-decoration:underline ;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   margin-top: 1em;
   color:grey;
   font-weight: bolder;
@@ -248,11 +258,11 @@ position: relative;
   position :absolute;
   margin-left: 50%;
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   color:grey;
   font-weight: bolder;
   width: 520px;
-  height: 425px;
+  height: 386px;
 }
 .prjct{
   text-align: center;
@@ -350,6 +360,23 @@ footer{
 .hamlink1,.hamlink2, .hamlink3, .hamlink4, .hamlink5, .hamlink6{
   text-decoration: none;
   font-weight: var(--ff-bold);
-  font-size: 15px;
-  color:whitesmoke;
+  font-size: 18px;
+  color:black;
+}
+.cv{
+  display:inline-block;
+  padding: -5em -2.5m;
+  background-color: #7eca9c;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform 200ms ease-in-out;
+  margin-top: 1%;
+  margin-left: 45%;
+  margin-right: 45%;
+}
+.cv:hover{
+  transform: scale(1.1);
 }
