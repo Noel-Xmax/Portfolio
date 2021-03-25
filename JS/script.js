@@ -1,7 +1,7 @@
 $(document).ready(function(){
   // $(".cv").submit(function(event){
   //   event.preventDefault();
-  //   // $(".hamlink1").show();
+    // $(".hamlink1").show();
    console.log("welcome")
 
 $(".hamlink1").click(function(){
@@ -24,12 +24,10 @@ $(".hamlink1").click(function(){
       $(".workExp").toggle();
      });
      $('.hamlink6').click(function(){
-      $(".aboutme").slideUp();
-      $(".myProjects").slideUp();
-      $(".workExp").slideUp();
-      $(".mySkills").slideUp();
-      $(".contactme").slideDown();
-      $("footer").slideDown();
+      $(".aboutme").toggle();
+      $(".myProjects").toggle();
+      $(".workExp").toggle();
+      $(".mySkills").toggle();
       });
     
       $('.hamlink1').click(function(){
@@ -38,11 +36,9 @@ $(".hamlink1").click(function(){
         $(".workExp").toggle();
         $(".mySkills").toggle();
         $(".contactme").toggle();
+        $("footer").toggle();
         });
-    // $('#prz').click(function(){
-    //   $(".card-crusts,.card-toppings").toggle();
-    // });
-    // $('#active').click(function(){
-    //   $(".card-menu,.card-crusts,.card-toppings,.item4,.card-sizes,.card-prices").toggle();
-    // });
+    $('workExp').click(function(){
+      $(".work1,.work2,.work3,.work4").collapse();
+    });
   });
