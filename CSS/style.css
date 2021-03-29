@@ -30,9 +30,9 @@ body{
 }
 strong{
   font-weight: bolder;
-  text-decoration: underline;
   font-size: 20px;
-  font-family:lobster;
+  font-family: cursive;
+  color: #b68973;
 }
 .hamareas{
   background-color: honeydew;
@@ -59,16 +59,25 @@ h1,h2,h3{
 }
 .me{
   font-weight: bolder;
-  font-size: 25px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
+  font-size: 2px
+  font-family Georgia, 'Times New Roman', Times, serif;
+  }
 .S1intopar{
-  background-color:grey;
+  background-color: #b68973;
   margin-bottom: 2%;
   align-self: flex-start;
   grid-column: 1/1;
-  font-size: 15px;
-  color:#f2b4b4;
+  color:#7eca9c;
+  font-style: bold;
+  font-size: 20px;
+  font-family: cursive;
+}
+.Noel{
+  background-color: #dbf6e9;
+  max-width: 400px;
+  max-height: 1200px;
+  text-align: center;
+  font-family: cursive;
 }
 section{
   padding: 1em 4em;
@@ -263,9 +272,8 @@ position: relative;
 .myProjects{
   background-color: rgb(241, 241, 197);
   text-align: center;
-  position: static;
+  position: absolute;
   float: left;
-  position :absolute;
   margin-left: 50%;
   text-align: center;
   margin-bottom: 1em;
@@ -289,7 +297,7 @@ position: relative;
   color:#f2b4b4;
 }
 .contactme{
-  display: relative;
+  /* display: relative; */
   text-align: center;
   margin-top: 35%;
   position: relative;
@@ -328,8 +336,6 @@ footer{
 .hamareas{
   display: flex;
   justify-content: space-between;
-  /* background-color: white; */
-  /* flex-direction: row; */
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 6%;
@@ -362,7 +368,6 @@ footer{
 }
   
 .hamlistings{
-  /* background-color: #ffdf91; */
   text-decoration: none;
   padding-left: 17%;
   padding-right: 7%;
@@ -400,7 +405,7 @@ footer{
 }
 
 @media only screen and (min-width: 768px) {
-  *{
+  
     
   }
-}
+
