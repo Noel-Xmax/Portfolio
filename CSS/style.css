@@ -61,6 +61,10 @@ h1,h2,h3{
   font-weight: bolder;
   font-size: 2px
   font-family Georgia, 'Times New Roman', Times, serif;
+  background-color:  rgb(241, 241, 197);
+  max-width: 400px;
+  max-height: 1000px;
+  text-align: center;
   }
 .S1intopar{
   background-color: #b68973;
@@ -295,6 +299,8 @@ position: relative;
 .portfolio li{
   list-style: none;
   color:#f2b4b4;
+
+
 }
 .contactme{
   /* display: relative; */

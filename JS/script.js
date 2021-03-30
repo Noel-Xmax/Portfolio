@@ -24,10 +24,10 @@ $(".hamlink1").click(function(){
       $(".workExp").toggle();
      });
      $('.hamlink6').click(function(){
-      $(".aboutme").toggle();
-      $(".myProjects").toggle();
-      $(".workExp").toggle();
-      $(".mySkills").toggle();
+      $(".aboutme").slideUp();
+      $(".myProjects").slideUp();
+      $(".workExp").slideUp();
+      $(".mySkills").slideUp();
       });
     
       $('.hamlink1').click(function(){
@@ -36,7 +36,6 @@ $(".hamlink1").click(function(){
         $(".workExp").toggle();
         $(".mySkills").toggle();
         $(".contactme").toggle();
-        $("footer").toggle();
         });
     $('workExp').click(function(){
       $(".work1,.work2,.work3,.work4").collapse();
